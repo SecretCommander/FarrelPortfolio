@@ -112,6 +112,12 @@ a.navbar-brand {
         font-size: 1.4rem !important; 
         padding: 4px 0px !important;
     }
+    /* language */
+    #techstack .my-auto{
+        margin-bottom: 0px !important;
+    }
+
+    
 }
 
 @media only screen and (max-width: 425px) {
@@ -132,6 +138,27 @@ a.navbar-brand {
     .edu-wrap:last-child .name-edu {
         font-size: 1.3rem !important; 
         padding: 5px 0px !important;
+    }
+
+    #techstack .col-6{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .row.gx-5.techstack{
+        --bs-gutter-x : 0px;
+    }
+
+    .language.mobile {
+        border: 100px !important;
+        padding: 20px 25px !important;
+    }
+    .col-6 .row{
+        width: 100% !important;
+        --bs-gutter-x: 0px !important;
+    }
+    .col-6.second h4{
+        margin-top: 10px;
     }
 }
 
@@ -413,6 +440,68 @@ a.navbar-brand {
     opacity: 1; 
 }
 
+/* LANGUAGE */
+
+.language {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: space-around;
+}
+
+.icon-lang {
+    width: calc(28% - 10px); 
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: 10px; 
+}
+
+.mobile .icon-lang{
+    width: calc(23% - 10px);
+    margin-bottom: 0px;
+}
+
+.language.mobile, .language.other{
+    padding: 20px 25px;
+}
+
+.other .icon-lang{
+    width: calc(23% - 10px);
+    margin-bottom: 0px;
+}
+
+.language.web-dev .icon-lang:last-child {
+    align-self: flex-start; 
+    margin-left: 13px;
+    margin-right: auto;
+}
+
+#techstack .col-6.second{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: inherit;
+}
+
+#techstack h2{
+    text-align: center;
+    margin: 30px 0px;
+}
+
+#techstack h4 {
+    margin-bottom: 15px;
+}
+
+#techstack .techstack{
+    padding: 20px 0px;
+}
+
+#techstack h4{
+    text-align: center;
+}
 
 @keyframes floating {
     0% {

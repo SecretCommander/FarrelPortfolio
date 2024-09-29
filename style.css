@@ -160,14 +160,41 @@ a.navbar-brand {
     .col-6.second h4{
         margin-top: 10px;
     }
+
+    #projects .g-5{
+        --bs-gutter-x: 0px;
+        --bs-gutter-y: 2.5rem;
+    }
+
+    h2{
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 375px) {
     #edu-line{
         margin-top: 200px !important;
     }
+
+    .my-description{
+        font-size: 2rem !important;
+        width: 300px !important;
+    }
 }
 
+@media only screen and (max-width: 320px) {
+
+    #blop1{
+        right: -75px !important;
+        top: -40px !important;
+    }
+
+    #blop2{
+        left: -80px !important;
+        bottom: -60px !important;
+    }
+
+}
 
 /* MAIN */
 
@@ -460,7 +487,7 @@ a.navbar-brand {
 }
 
 .icon-lang {
-    width: calc(28% - 10px); 
+    width: calc(24%); 
     aspect-ratio: 1/1;
     object-fit: cover;
     margin-bottom: 10px; 
@@ -493,6 +520,10 @@ a.navbar-brand {
     height: inherit;
 }
 
+#techstack{
+    margin-bottom: 28px;
+}
+
 #techstack h2{
     text-align: center;
     margin: 30px 0px;
@@ -500,14 +531,82 @@ a.navbar-brand {
 
 #techstack h4 {
     margin-bottom: 15px;
+    text-align: center;
 }
 
 #techstack .techstack{
     padding: 20px 0px;
 }
 
-#techstack h4{
-    text-align: center;
+/* Projects */
+
+#projects{
+    background-color: hsla(208, 89%, 24%, 0.95);
+}
+
+#projects h2{
+    color: #fff;
+    font-family: "DM Sans";
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.card-project .card{
+    background-color: #0B60B0;
+    font-family: "DM Sans";
+    border-radius: 20px;
+    color: #fff;
+}
+
+.card-project .card .card-image{
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    padding: 5px 3px 0px 3px ;
+}
+
+.card-project .card-body{
+    padding: 5px 3px;
+}
+
+h5.card-title{
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin: 6px 0px 14px 0px;
+    font-weight: bold;
+    padding-left: 3px;
+}
+
+.tag-group{
+    color: #000;
+    width: 100%;
+    margin-bottom: 14px;
+    font-size: 1rem;
+}
+
+.tag{
+    background-color: #525CEB;
+    padding: 5px 1.1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: "DM Sans";
+    margin-right: 0.3rem;
+}
+
+p.card-text{
+    padding-left: 3px;
+    margin-bottom: 20px;
+}
+
+.btn.btn-project{
+    background-color: #fff;
+    width: 140px;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 @keyframes floating {

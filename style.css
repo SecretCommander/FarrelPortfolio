@@ -7,6 +7,19 @@ html {
 body {
   background-color: #f5f5f5 !important;
   overflow-x: hidden;
+  padding-top: 4rem;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding-top: 3.5rem;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  body {
+    padding-top: 3rem;
+  }
 }
 
 .navbar {
@@ -524,9 +537,11 @@ a.navbar-brand {
   margin-bottom: 28px;
 }
 
-#techstack h2 {
+#techstack h2,
+#contact h2 {
   text-align: center;
   margin: 30px 0px;
+  font-size: 40px;
 }
 
 #techstack h4 {
@@ -578,6 +593,9 @@ h5.card-title {
   margin: 6px 0px 14px 0px;
   font-weight: bold;
   padding-left: 3px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .tag-group {
@@ -585,6 +603,9 @@ h5.card-title {
   width: 100%;
   margin-bottom: 14px;
   font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .tag {
@@ -599,6 +620,7 @@ h5.card-title {
 p.card-text {
   padding-left: 3px;
   margin-bottom: 20px;
+  min-height: 97px;
 }
 
 .btn.btn-project {
@@ -763,7 +785,7 @@ textarea:hover {
   }
 
   #contact .container h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 10px !important;
   }
 
@@ -802,7 +824,6 @@ textarea:hover {
 
   .sosmed {
     display: none !important;
-    pointer-events: none;
   }
 
   .sosmed-2 {
@@ -883,18 +904,39 @@ textarea:hover {
   top: 0;
   left: 0;
   padding: 30px;
-  pointer-events: none;
 }
 
 .sosmed-2 {
   display: none;
 }
 
-.icon-cont img{
-  width: 30px;
-  height: 30px;
+.icon-cont img {
+  width: 28px;
+  height: 28px;
   object-fit: cover;
   color: #fff;
+}
+
+.sosmed-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.sosmed-2 .icon-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sosmed-2 .icon-cont a {
+  margin-top: -3px;
+}
+
+.sosmed-2 > .icon-cont img {
+  width: 20px;
+  height: 20px;
 }
 
 .sosmed .icon-cont {
@@ -906,7 +948,6 @@ textarea:hover {
   justify-content: center;
   align-items: center;
   margin: auto;
-  pointer-events: none;
   position: relative;
   animation: flying 3s ease-in-out infinite;
 }
